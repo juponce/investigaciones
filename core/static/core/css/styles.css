@@ -1,3 +1,27 @@
+:root {
+    --primary-color: #003684;
+    --secondary-color: #f6d317;
+    --white: #e9ebed;
+    --black: #292929;
+    /*  fuente https://www.behance.net/gallery/10761523/Corduroy-Slab-Free */
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+h1, h2, h3, h4 {
+    color: var(--secondary-color);
+}
+label {
+    color: var(--white);
+}
+
 html {
     height: 100%;
 }
@@ -5,4 +29,41 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100%;
+    background-color: var(--black);
+}
+
+/* ----------- base -------------------- */
+
+.navbar-color {
+    background-color: var(--primary-color);
+}
+
+.navbar-font {
+    color: var(--secondary-color);
+}
+
+/* ------------ Fin base -------------- */
+
+/* ------------ Login ----------------- */
+
+.btn-principal {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-style: solid;
+    border-width: 1px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+/* --------- Fin Login --------------- */
+
+/* --------- Footer ------------------ */
+
+footer {
+    margin-top: auto;
+    margin-bottom: 10px;
+    text-align: center;
+    color: var(--secondary-color);
 }
