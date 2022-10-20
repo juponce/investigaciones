@@ -7,10 +7,11 @@
     <title>{% block title %} {% endblock %}</title>
     {% load static %}
     <link rel="stylesheet" href="{% static 'core/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/styles.css' %}">
 </head>
   <body>
-    <header>
       {% if request.user.is_authenticated %}
+      <header class="navbar-color">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Navbar</a>
@@ -35,14 +36,16 @@
           </div>
         </div>
       </nav>
+    </header>
       {% else %}
-      <nav class="navbar navbar-light bg-light">
+    <header class="navbar-color">
+      <nav class="navbar">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand navbar-font" href="{% url 'home' %}">Investigaciones</a>
         </div>
       </nav>
-      {% endif %}
     </header>
+      {% endif %}
     {% block content %}
   
     {% endblock %}
