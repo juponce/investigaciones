@@ -1,5 +1,6 @@
 from django.shortcuts import render
+from django.contrib.auth.views import LoginView
 
 # Create your views here.
-def home(request):
-    return render(request, 'core/index.html')
+class HomeView(LoginView):
+    template_name = 'core/index.html'
