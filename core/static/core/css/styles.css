@@ -8,15 +8,16 @@
 
 a {
     text-decoration: none;
-    color: var(--white);
+    color: var(--black);
 }
 
 a:hover {
-    color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
+
 h1, h2, h3, h4 {
-    color: var(--secondary-color);
+    color: var(--primary-color);
 }
 label {
     color: var(--white);
@@ -29,27 +30,48 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100%;
-    background-color: var(--black);
+    background-color: var(--white);
 }
 
-/* ----------- base -------------------- */
+/* ----------- base ------------------ */
 
 .navbar-color {
     background-color: var(--primary-color);
 }
 
-.navbar-font {
+.navbar-header-font {
     color: var(--secondary-color);
 }
 
-/* ------------ Fin base -------------- */
+.navbar-element-font li a{
+    color: var(--white);
+}
 
-/* ------------ Login ----------------- */
+.navbar-element-font li:hover {
+    border-style: solid;
+    border-color: var(--black);
+    border-width: 0.1px;
+}
+
+.navbar-element-font li a:hover {
+    color: var(--secondary-color);
+}
+
+
+
+/* ------------ Fin base ------------- */
+
+/* ------------ Login ---------------- */
+
+.form-labels div label{
+    color: var(--black);
+}
 
 .btn-principal {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     border-style: solid;
+    border-radius: 5px;
     border-width: 1px;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -59,11 +81,55 @@ body {
 
 /* --------- Fin Login --------------- */
 
+/* --------- Signup ------------------ */
+
+.error-msg {
+    color: var(--black);
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.error-msg ul {
+    margin-top: 10px;
+    list-style-type: none;
+}
+
+/* --------- Fin Signup -------------- */
+
+/* --------- Home -------------------- */
+
+.button-row {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 60px;
+}
+
+.button-row a button{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-style: solid;
+    border-radius: 5px;
+    width: 300px;
+    height: 90px;
+}
+
+.button-row a button:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+/* --------- Fin Home ---------------- */
+
 /* --------- Footer ------------------ */
 
 footer {
     margin-top: auto;
-    margin-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 10px;
     text-align: center;
+    background-color: var(--primary-color);
     color: var(--secondary-color);
 }
+
+/* --------- Fin Footer -------------- */

@@ -20,8 +20,10 @@ from django.conf import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('core.urls')),
-    path('accounts', include('django.contrib.auth.urls')),
-    path('accounts', include('registration.urls')),
+    path('accounts/', include('django.contrib.auth.urls')),
+    path('accounts/', include('registration.urls')),
+    path('informes/', include('informeEstadistica.urls')),
+    path('verification/', include('verify_email.urls')),
 ]
 
 if settings.DEBUG:
