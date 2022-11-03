@@ -1,0 +1,10 @@
+{% extends 'core/base.html' %} {% load static %}
+{% block title %}Informes{% endblock %}
+{% block content %}
+<section class="d-flex flex-column align-items-center">
+    <div class="py-5 button-row">
+        <a href="{% url 'informe_pdf' %}"><button>Generar PDF</button></a>
+    </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends 'core/base.html' %} {% load static %}
+{% block title %}Bienvenido{% endblock %}
+{% block content %}
+<section class="d-flex flex-column align-items-center">
+    <div class="py-5">
+        <h4 class="h2" onClick="test()">Bienvenido  {{ user.username }}</h4>
+    </div>
+    <div class="button-row">
+        <a href=""><button>Geolocalización</button></a>
+        <a href=""><button>Denuncias</button></a>
+    </div>
+    <div class="button-row">
+        <a href=""><button>Rutas y Horarios</button></a>
+        <a href="{% url 'informes' %}"><button>Informes</button></a>
+    </div>
+</section>
+{% endblock %}
