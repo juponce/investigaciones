@@ -18,8 +18,9 @@
                   <input type="password" id="id_password" name="password" class="form-control form-bordes " required>
                 </div>
   
-                <div class="mb-3 d-flex justify-content-center">
+                <div class="mb-3 d-flex justify-content-center button-cont">
                   <button type="submit" class="button2 btn-2 btn-block btn-principal">Iniciar Sesión</button>
+                </div>
                   {% if form.non_field_errors %}
                       <div class="alert alert-primary mt-3 alert-danger" role="alert">
                           Usuario o contraña incorrectos, vuelva a intentarlo.
@@ -30,7 +31,7 @@
                     Usuario registrado correctamente
                 </div>
                   {% endif %}
-                </div>
+                
                 
                 
                     <a class= "a2" href="{% url 'signup' %}">¿No tienes una cuenta? Registrarse</a>
