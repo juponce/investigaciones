@@ -20,7 +20,7 @@ h1, h2, h3, h4 {
     color: var(--primary-color);
 }
 label {
-    color: var(--white);
+    color: var(--black);
 }
 
 html {
@@ -79,6 +79,11 @@ body {
     padding-right: 8px;
 }
 
+.button-cont button:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
 /* --------- Fin Login --------------- */
 
 /* --------- Signup ------------------ */
@@ -92,6 +97,10 @@ body {
 .error-msg ul {
     margin-top: 10px;
     list-style-type: none;
+}
+
+.button-cont {
+    text-align: center;
 }
 
 /* --------- Fin Signup -------------- */
@@ -120,6 +129,42 @@ body {
 }
 
 /* --------- Fin Home ---------------- */
+
+/* --------- Geolocalización --------- */
+
+#map {
+    height: calc(100vh - 124px);
+}
+
+/* --------- Fin Geolocalización ----- */
+
+
+/* --------- Denuncia ---------------- */
+
+.denuncia-form {
+    width: 60%;
+}
+
+.denuncia-form input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.denuncia-form #id_fecha_delito {
+    
+}
+
+.denuncia-form button {
+
+}
+
+.denuncia-form button:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+
+/* --------- Fin Denuncia ------------ */
 
 /* --------- Footer ------------------ */
 
