@@ -6,8 +6,8 @@
         <h4 class="h2" onClick="test()">Bienvenido  {{ user.username }}</h4>
     </div>
     <div class="button-row">
-        <a href=""><button>Geolocalización</button></a>
-        <a href=""><button>Denuncias</button></a>
+        <a href="{% url 'geo' %}"><button>Geolocalización</button></a>
+        <a href="{% url 'denuncias' %}"><button>Denuncias</button></a>
     </div>
     <div class="button-row">
         <a href=""><button>Rutas y Horarios</button></a>
